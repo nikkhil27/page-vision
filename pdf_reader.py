@@ -112,7 +112,7 @@ class ImageGenerator:
 
         # Load SD 1.5 img2img pipeline for continuity
         self.img2img_pipe = StableDiffusionImg2ImgPipeline.from_pretrained(
-            "nitrosocke/Ghibli-Diffusion",
+            "runwayml/stable-diffusion-v1-5",
             torch_dtype=torch.float16
         ).to(device)
 
